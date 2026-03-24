@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person Object Example</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+
+            this.getDetails = function() {
+                return `Name: ${this.name}, Age: ${this.age}`;
+            };
+        }
+
+        function showPersonDetails() {
+            let person = new Person("Alice", 25);
+            document.getElementById("output").innerText = person.getDetails();
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="showPersonDetails()">Show Person Details</button>
+    <p id="output"></p>
+
+</body>
+</html>

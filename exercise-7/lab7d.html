@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Object Example</title>
+    <script>
+        function showMathOperations() {
+            let num = 25;
+            let sqrt = Math.sqrt(num);
+            let rand = Math.random() * 100;
+
+            document.getElementById("output").innerText =
+                `Square Root of 25: ${sqrt}, Random Number: ${rand.toFixed(2)}`;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showMathOperations()">Show Math Operations</button>
+    <p id="output"></p>
+</body>
+</html>
