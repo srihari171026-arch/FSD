@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>lab 9a experiments</h2>
+    <input type="text" id="num">
+    <button onclick="factorial()">factorial</button>
+     <button onclick="fibonacci()">fibonacci</button>
+     <button onclick="prime()">prime</button>
+     <button onclick="palindrome()">palindrome</button>
+     <p id="result"></p>
+     <script>
+        function factorial() {
+            console.log("factorial executed.")
+            let n=Number(num.value),f=1;
+            for(let i=1;i<=n;i++) f*=i;
+            result.innerHTML=f;
+        }
+        function fibonacci () {
+            console.log("fibonacci executed.")
+            let n=Number(num.value),a=0,b=1;
+            result.innerHTML="";
+            for(let i=0;i,n;i++){
+                result.innerHTML+=a+"";
+                [a,b]=[b,a+b];
+            }
+        }
+        function prime(){
+            console.log("palindrome executed.")
+            let n=Number(num.value);
+            result.innerHTML="";
+            for(let i=2;i<n;i++){
+                let p=true;
+                for(let j=2;j<i;j++) if(i%j==0) p=false;
+            if(p) result.innerHTML+=i+"";
+            }
+        }
+        function palindrome() {
+            console.log("palindrome executed.")
+            let s=num.value
+            result.innerHTML=s == s.split("").reverse().join("")?"palindrome" : "notpalindrome"
+        }
+     </script>
+</body>
+</html>

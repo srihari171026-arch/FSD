@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 9b & 9c</title>
+</head>
+<body>
+    <h2>lab 9b & 9c experiment</h2>
+    <form>
+        userName: <input type="text" id="name"><br>
+        mobile: <input type="text" id="mobile"><br>
+        Email: <input type="text" id="email"><br>
+        <button type="button"  onclick="validate()">
+            validate
+        </button>
+    </form>
+    <script>
+        function validate() {
+            let name=document.getElementById("name").value
+            let mobile=document.getElementById("mobile").value
+            let email=document.getElementById("email").value
+            console.log(name,mobile,email)
+            let nameReg=/^[A-Za-z][A-Za-z0-9]{5,}$/
+            if(!nameReg.test(name)){
+                alert("invalid name")
+                return false
+            }
+            let mobileReg=/^[0-9]{10}$/
+            if(!mobileReg.test(mobile)){
+            alert("invalid mobile number")
+            return false
+            }
+            let emailReg=/^\w+@\w+\.\w+$/
+           if(!emailReg.test(email)){
+            alert("invalid email")
+            return false
+           }
+        }
+    </script>
+</body>
+</html>
