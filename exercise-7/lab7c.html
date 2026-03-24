@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 7c</title>
+</head>
+<body>
+    <h2>lab 7c experiment</h2>
+    <button onclick="arrayobject()">show arrayobject</button>
+    <script>
+        function arrayobject(){
+            let myarray=[30,50,40,10,4]
+            console.log("total elements are",myarray.length)
+            console.log(myarray)
+            // add 50 in the end of array
+            myarray.push(100)
+            console.log(myarray)
+            // remove 100 value
+            myarray.pop()
+            console.log(myarray)
+            myarray.shift()
+            console.log(myarray)
+            myarray.unshift(30)
+            console.log(myarray)
+        }
+    </script>
+</body>
+</html>
