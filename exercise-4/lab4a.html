@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>CSS</title>
+  <style>
+    p { color: blue; }          
+    #myId { color: red; }       
+    .myClass { color: green; }  
+    h1, h2 { color: orange; }   
+    * { font-family: Arial; }   
+    div p { background: black ; }   
+    div > p { font-weight: bold; }  
+    h2 + p { text-decoration: underline; } 
+    h2 ~ p { border: solid black; }    
+
+    a:hover { color: purple; }
+    li:first-child { color: brown; }
+
+    p::first-line { font-style: lucida; } 
+
+    input[type="text"] { background: lightgray; }
+    a[target="_blank"] { font-size: 15px; }
+  </style>
+</head>
+<body>
+  <h1>SIMPLE SELECTORS</h1>
+  <p id="myId">paragraph with ID.</p>
+  <div>
+    <p class="myClass">Paragraph inside div with class.</p>
+    <p>Another paragraph inside div.</p>
+  </div>
+  <p>Normal paragraph outside div.</p>
+
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+  </ul>
+
+  <a href="https://www.iith.ac.in/news/2026/
+  02/27/Summer-Undergraduate-Research-Exposure/">link</a>
+  <a href="https://chatgpt.com/" target="_blank">click here </a>
+
+  <br><br>
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password input">
+</body>
+</html>
