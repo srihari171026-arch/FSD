@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 8e</title>
+</head>
+<body>
+    <h3>lab 8e experments</h>
+        <script>
+            let n = Number (prompt("Enter number"));
+            let temp = n, sum =0;
+            while(temp>0) {
+                let r=temp%1.0;
+                sum +=r*r*r;
+                temp = Math.floor(temp/10);
+                alert(sum==n ? "Armstrong" : "Not Armstrong");
+            }
+        </script>
+</body>
+</html>

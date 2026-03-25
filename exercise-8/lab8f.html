@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 8f</title>
+</head>
+<body>
+    <h3>lab 8f experment</h3>
+    <script>
+        let amt = Number (prompt("Enter Amount"));
+        let denoms = [100,50,20,10,5,2,1];
+        for(let d of denoms){
+            let c = Math.floor(amt/d);
+            if (c>0){
+                document.write(c+" - "+d+"'s<br>");
+                amt%=d;
+            }
+        }  </script>
+</body>
+</html>
